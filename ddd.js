@@ -11,15 +11,15 @@ function busca() {
 	}
 
 // Criando uma lista ul onde aparecerão as cidades atraves da função "f_lista()", e também adicionando a função f_apaga, para apagar a lista.
-ul = document.createElement('ul');
-ul.setAttribute('id', 'lista')
+ul = document.createElement("ul");
+ul.setAttribute("id", "lista")
 document.querySelector('body').append(ul)
-document.querySelector('#est').addEventListener('change', f_apaga)
+document.querySelector('#est').addEventListener("change", f_apaga)
 
 
 // Função feita para criar uma lista com os nomes das cidades quando o usuario clicar em "Buscar..."
 function f_lista(pesq){
-	li = document.createElement('li');
+	li = document.createElement("li");
 	li.textContent = pesq
 	document.querySelector('#lista').append(li)}
 
